@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Greek Yogurt🥛</title>
+    <style>
+      h1 {
+        text-align: center;
+        border: 1px solid white;
+        border-radius: 4px;
+        padding: 20px;
+        margin: 20px 15px 10px 15px;
+      }
+
+      h2 {
+        text-align: center;
+        font-size: 1.5em;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 90%;
+      }
+
+      p {
+        line-height: 1.5;
+        font-size: 24px;
+      }
+
+      div {
+        margin: 30px auto;
+        max-width: 650px;
+        color: #ffff;
+        background: linear-gradient(to top, #37ecba 0%, #72afd3 100%);
+        padding: 20px;
+        border-radius: 10px;
+        font-family: "Cerebri Sans", Helvetica, Arial, sans-serif;
+      }
+
+      .link {
+        color: #ffff;
+        display: block;
+      }
+
+      button {
+        display: block;
+        margin: 30px auto;
+        background-color: #09201b;
+        color: #ffff;
+        border: none;
+        border-radius: 4px;
+        box-shadow: 2px 5px 5px rgb(0, 0, 0, 0.2);
+        width: 70%;
+        padding: 10px 0px 10px 0px;
+        font-size: 2.3rem;
+        text-transform: uppercase;
+        transition: opacity 150ms ease;
+      }
+
+      button:hover {
+        background-color: #0e3129;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <br />
+      <h1>I Love Yogurt</h1>
+      <h2>Especially Greek Yogurts</h2>
+      <hr />
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhMcKb1VeBUeBf2qmt9UBHtgrd9KEfYix21w&s"
+        alt="Greek Yogurt"
+      />
+      <hr />
+      <p>
+        <strong>Greek yogurt</strong> is a yogurt that has been strained to
+        remove most of its whey, resulting in a thicker consistency than
+        unstrained yogurt, while preserving yogurt's distinctive sour taste.
+        Like many types of yogurt, strained yogurt is often made from milk that
+        has been enriched by boiling off some of its water content, or by adding
+        extra butterfat and powdered milk. In Europe and North America, it is
+        often made with low-fat or fat-free yogurt. In Iceland a similar product
+        named <em>skyr</em> is produced.
+      </p>
+      <small>
+        <a
+          href="https://en.wikipedia.org/wiki/Strained_yogurt"
+          target="_blank"
+          class="link"
+          >Read on wikipedia</a
+        >
+      </small>
+      <br />
+      <button>Try Greek Yogrut</button>
+    </div>
+    <script>
+        function tryGreel() {
+        let name = prompt("what is your name?");
+
+        if (name && name.trim() !== ""){
+        alert("Thanks, "+ name +" , we willl be in touch. Meanwhile, have a lot of Yogurt!");
+        }
+        else{
+            alert("No name, no Greek Yogurt for you!");
+        }
+    
+    }
+        let button = document.querySelector("button");
+        button.addEventListener("click",tryGreel);
+    </script>
+  </body>
+</html>
